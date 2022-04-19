@@ -1,0 +1,35 @@
+<ion-content>
+  <ion-grid class="grid1">
+  </ion-grid>
+  <ion-slide>
+      <div class="contaier-login">
+          <ion-grid >
+              <ion-row>
+                  <ion-col>
+                      <h1>Iniciar Sesión</h1>
+                  </ion-col>
+              </ion-row>
+              <ion-row>
+                  <ion-col >
+                    <form [formGroup]="formularioLogin">
+                      <ion-item>
+                          <ion-icon name="person-outline"></ion-icon>
+                          <ion-input formControlName="user" type="text" required placeholder="Usuario"></ion-input>
+                      </ion-item>
+                      <br/>
+                      <ion-item>
+                          <ion-icon name="lock-closed-outline"></ion-icon>
+                          <ion-input formControlName="password" type="password" required placeholder="Contraseña"></ion-input>
+                      </ion-item>
+                    </form>
+                  </ion-col>
+              </ion-row>
+              <ion-row>
+                  <ion-col>
+                      <ion-button (click)="login()" expand="block" color="dark">Ingresar</ion-button>
+                  </ion-col>
+              </ion-row>
+          </ion-grid>
+      </div>
+  </ion-slide>
+</ion-content>
